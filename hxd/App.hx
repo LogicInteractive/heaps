@@ -56,7 +56,7 @@ class App implements h3d.IDrawable {
 		By default does nothing. Override this method to provide custom on-resize logic.
 	**/
 	@:dox(show)
-	function onResize() {
+	dynamic function onResize() {
 	}
 
 	/**
@@ -183,7 +183,7 @@ class App implements h3d.IDrawable {
 		By default does nothing. Override this method to provide application initialization logic.
 	**/
 	@:dox(show)
-	function init() {
+	dynamic function init() {
 	}
 
 	function mainLoop() {
@@ -207,7 +207,7 @@ class App implements h3d.IDrawable {
 		@param dt Time elapsed since last frame, normalized.
 	**/
 	@:dox(show)
-	function update( dt : Float ) {
+	dynamic function update( dt : Float ) {
 	}
 
 	static function staticHandler() {}
